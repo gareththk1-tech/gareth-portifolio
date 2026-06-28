@@ -14,8 +14,8 @@ const person: Person = {
 };
 
 const newsletter: Newsletter = {
-  display: false,
-  title: <>Subscribe to {person.firstName}'s fun place</>,
+  display: true,
+  title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: <>Updates on my projects, learning journey, and engineering insights.</>,
 };
 
@@ -46,19 +46,19 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>welcome to my life!</>,
+  headline: <>Building, learning, and growing one project at a time</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">East Java Trip</strong>{" "}
+        <strong className="ml-4">Featured</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Take a look at my adventures!
+          Featured work
         </Text>
       </Row>
     ),
-    href: "/blog/east-java-trip",
+    href: "/work",
   },
   subline: (
     <>
@@ -141,7 +141,7 @@ const about: About = {
     institutions: [
       {
         name: "Nanyang Technological University",
-        description: <>Incoming student AY'27 of the Renaissance Engineering Programme — an interdisciplinary degree cultivating engineering leaders and innovators.</>,
+        description: <>Incoming student of the Renaissance Engineering Programme — an interdisciplinary degree cultivating engineering leaders and innovators.</>,
       },
       {
         name: "Hwachong Institution",
@@ -215,11 +215,23 @@ const gallery: Gallery = {
       src: "/images/gallery/landscape1.png",
       alt: "image",
       orientation: "horizontal",
+      wave: true,
+    },
+    {
+      src: "/images/project3/streets.png",
+      alt: "JB streets",
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/portrait1.png",
       alt: "image",
       orientation: "vertical",
+      wave: true,
+    },
+    {
+      src: "/images/project2/MacR.png",
+      alt: "MacRitchie Reservoir",
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/landscape2.png",
@@ -227,9 +239,21 @@ const gallery: Gallery = {
       orientation: "horizontal",
     },
     {
+      src: "/images/project3/onrocks.png",
+      alt: "On the rocks, JB",
+      orientation: "horizontal",
+      wave: true,
+    },
+    {
       src: "/images/gallery/portrait2.png",
       alt: "image",
       orientation: "vertical",
+    },
+    {
+      src: "/images/project2/bukit_timah.png",
+      alt: "Bukit Timah Hill",
+      orientation: "horizontal",
+      wave: true,
     },
     {
       src: "/images/gallery/landscape3.png",
@@ -237,14 +261,31 @@ const gallery: Gallery = {
       orientation: "horizontal",
     },
     {
+      src: "/images/project3/jungle.png",
+      alt: "JB jungle hike",
+      orientation: "vertical",
+    },
+    {
       src: "/images/gallery/portrait3.png",
       alt: "image",
       orientation: "vertical",
+      wave: true,
+    },
+    {
+      src: "/images/project2/BukitBatok.png",
+      alt: "Bukit Batok Quarry",
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/landscape4.png",
       alt: "image",
       orientation: "horizontal",
+    },
+    {
+      src: "/images/project3/pratadinner.png",
+      alt: "Prata dinner in JB",
+      orientation: "horizontal",
+      wave: true,
     },
   ],
 };
