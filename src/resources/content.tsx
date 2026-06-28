@@ -14,8 +14,8 @@ const person: Person = {
 };
 
 const newsletter: Newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  display: false,
+  title: <>Subscribe to {person.firstName}'s fun place</>,
   description: <>Updates on my projects, learning journey, and engineering insights.</>,
 };
 
@@ -46,19 +46,19 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building, learning, and growing one project at a time</>,
+  headline: <>welcome to my life!</>,
   featured: {
-    display: false,
+    display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Featured</strong>{" "}
+        <strong className="ml-4">East Java Trip</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Take a look at my adventures!
         </Text>
       </Row>
     ),
-    href: "/work",
+    href: "/blog/east-java-trip",
   },
   subline: (
     <>
@@ -141,7 +141,7 @@ const about: About = {
     institutions: [
       {
         name: "Nanyang Technological University",
-        description: <>Incoming student of the Renaissance Engineering Programme — an interdisciplinary degree cultivating engineering leaders and innovators.</>,
+        description: <>Incoming student AY'27 of the Renaissance Engineering Programme — an interdisciplinary degree cultivating engineering leaders and innovators.</>,
       },
       {
         name: "Hwachong Institution",
