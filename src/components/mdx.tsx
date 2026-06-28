@@ -1,5 +1,6 @@
 import { MDXRemote, MDXRemoteProps } from "next-mdx-remote/rsc";
 import React, { ReactNode } from "react";
+import { RevealWaveImage } from "@/components/ui/reveal-wave-image";
 import { slugify as transliterate } from "transliteration";
 
 import {
@@ -202,6 +203,7 @@ const components = {
   Icon,
   Media,
   SmartLink,
+  RevealWaveImage,
 };
 
 type CustomMDXProps = MDXRemoteProps & {

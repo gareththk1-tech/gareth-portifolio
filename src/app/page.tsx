@@ -15,6 +15,7 @@ import { home, about, person, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
+import { RevealWaveImage } from "@/components/ui/reveal-wave-image";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -29,6 +30,18 @@ export async function generateMetadata() {
 export default function Home() {
   return (
     <Column maxWidth="m" gap="xl" paddingY="12" horizontal="center">
+      <div style={{ width: "100%", height: "60vh", borderRadius: "12px", overflow: "hidden" }}>
+        <RevealWaveImage
+          src="/images/gallery/landscape1.png"
+          waveSpeed={0.2}
+          waveFrequency={0.7}
+          waveAmplitude={0.5}
+          revealRadius={0.5}
+          revealSoftness={1}
+          pixelSize={2}
+          mouseRadius={0.4}
+        />
+      </div>
       <Schema
         as="webPage"
         baseURL={baseURL}
